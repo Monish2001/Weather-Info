@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+</head>
+
+<body>
+    <div class="top">
+        <div class="top-left"><br>
+            <h1>GET WEATHER DETAILS FOR YOUR CURRENT LOCATION</h1><br>
+
+            <button onclick="getLocation()">Get Current Weather</button>
+
+        </div>
+
+        <div class="top-right">
+            <!-- <div class="card"> -->
+            <br>
+            <h1>
+                GET WEATHER DETAILS FOR A PARTICULAR CITY
+            </h1><br>
+            <div class='wrap'>
+                <select id="getWeatherByCity">
+                      <option value='Chennai'>Chennai</option>
+                      <option value='Madurai'>Madurai</option>
+                      <option value='Vellore'>Vellore</option>
+                      <option value='Trichy'>Trichy</option>
+                      <option value='New Delhi'>New Delhi</option>
+                      <option value='Mumbai'>Mumbai</option>
+                      <option value='Bangalore'>Bangalore</option>
+                      <option value='Pune'>Pune</option>
+                      <option value='hello'>hello</option>
+                </select>
+            </div>
+            <br>
+            <button type="button" id="getWeather" onclick="getWeather()">Get Weather Details</button>
+            <!-- </div> -->
+        </div>
+
+    </div>
+
+    <div class="bottom">
+        <div class="card">
+            <h1 class="name" id="name"></h1>
+            <p id="temp"></p>
+            <p id="humidity"></p>
+            <p id="desc"></p>
+            <p id="lat"></p>
+            <p id="lon"></p>
+
+        </div>
+    </div>
+
+</body>
+<script src="static/js/weatherInfo.js"></script>
+
+</html>
