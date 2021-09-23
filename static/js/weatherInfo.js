@@ -14,7 +14,6 @@ function getWeather() {
         })
         .catch(function(err) {
             alert("Something went wrong!!")
-            console.log("Something went wrong!", err);
         });
 }
 
@@ -22,7 +21,6 @@ function getLocation() {
     if (navigator.geolocation) {
         var val = navigator.geolocation.getCurrentPosition(getWeatherForCurrentLocation);
     } else {
-        // x.innerHTML = "Geolocation is not supported by this browser.";
         alert("Geolocation is not supported by this browser.")
     }
 }

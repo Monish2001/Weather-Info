@@ -13,20 +13,12 @@
     background-color: blue;
     width: 50%;
     text-align: center;
-    /* flex: 1; */
-    /* position: absolute;
-    top: 50%;
-    left: 50%; */
 }
 
 .top-right {
     background-color: red;
     width: 50%;
     text-align: center;
-    /* flex: 1; */
-    /* position: absolute;
-    top: 50%;
-    left: 50%; */
 }
 
 .card {
@@ -44,7 +36,6 @@
 
 .card p {
     text-align: center;
-    /* margin: 40px 0; */
     margin: 6px;
     font-size: 20px;
 }
